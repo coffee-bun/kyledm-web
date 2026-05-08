@@ -8,7 +8,6 @@ import Education from "./sections/Education";
 import Projects from "./sections/Project";
 import Contact from "./sections/Contact";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 
 function App() {
   return (
