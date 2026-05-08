@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kyledm-web/static/css/main.6ea3aa55.css",
-    "main.js": "/kyledm-web/static/js/main.4b5686dd.js",
+    "main.js": "/kyledm-web/static/js/main.750c53b6.js",
     "static/js/453.516aa08f.chunk.js": "/kyledm-web/static/js/453.516aa08f.chunk.js",
     "static/media/kyle-hover.jpg": "/kyledm-web/static/media/kyle-hover.230326bc153d4fb795cb.jpg",
     "static/media/sample-image.jpg": "/kyledm-web/static/media/sample-image.ebe03db0f0b176ff2335.jpg",
@@ -63,11 +63,11 @@
     "static/media/powerpoint-icon.png": "/kyledm-web/static/media/powerpoint-icon.6027bd04abd30f8b1e3d.png",
     "index.html": "/kyledm-web/index.html",
     "main.6ea3aa55.css.map": "/kyledm-web/static/css/main.6ea3aa55.css.map",
-    "main.4b5686dd.js.map": "/kyledm-web/static/js/main.4b5686dd.js.map",
+    "main.750c53b6.js.map": "/kyledm-web/static/js/main.750c53b6.js.map",
     "453.516aa08f.chunk.js.map": "/kyledm-web/static/js/453.516aa08f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ea3aa55.css",
-    "static/js/main.4b5686dd.js"
+    "static/js/main.750c53b6.js"
   ]
 }
