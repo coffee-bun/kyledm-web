@@ -24,7 +24,7 @@ section {
 /* HERO SECTION */
 .page1-section {
   height: 100vh;
-  background-image: url("C:/Users/Kyle/OneDrive/Desktop/React Projects/kyledmendoza-porfolio-2026/kyledcm-2026/src/assets/portfolio1colored.png"); /* 🔥 PUT YOUR IMAGE */
+  background-image: url("C:/React Projects/coffee-bun/src/assets/portfolio1colored.jpg"); /* 🔥 PUT YOUR IMAGE */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -741,7 +741,7 @@ section {
 }
 
   .page1-section {
-    background-image: url("C:/Users/Kyle/OneDrive/Desktop/React Projects/kyledmendoza-porfolio-2026/kyledcm-2026/src/assets/portfolio1colored.png"); /* 🔥 PUT YOUR IMAGE */
+    background-image: url("C:/React Projects/coffee-bun/src/assets/portfolio1colored.jpg"); /* 🔥 PUT YOUR IMAGE */
     background-size: cover;
     background-position: 73% center;
   }

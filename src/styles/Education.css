@@ -369,65 +369,15 @@ html, body, #root {
   transform: translateY(-2px);
 }
 
-/* GALLERY */
+/* GALLERY - MOBILE FIRST (1 column by default) */
 .class-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-}
-
-.gallery-item {
-  background: #ddd;
-  height: 120px;
-  border-radius: 12px;
-}
-
-/* DESCRIPTION */
-.gallery-description {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-/* TABLET */
-@media (min-width: 600px) {
-  .learning-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .class-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* DESKTOP */
-@media (min-width: 1024px) {
-  .learning-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .class-gallery {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .education-page3-header h2 {
-    font-size: 2.6rem;
-  }
-}
-
-
-.class-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr); /* Changed to 1 column on mobile */
   gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto 1.5rem;
+  padding: 0 1rem; /* Added padding for better mobile spacing */
 }
-
 
 .gallery-item {
   background: #f8f9fa;
@@ -435,7 +385,8 @@ html, body, #root {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   aspect-ratio: 16 / 10;
-  cursor: pointer; /* Shows it's clickable */
+  cursor: pointer;
+  width: 100%; /* Ensure full width */
 }
 
 .gallery-item:hover {
@@ -465,7 +416,7 @@ html, body, #root {
 }
 
 .gallery-item:hover .gallery-item-image img {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
 /* DESCRIPTION */
@@ -475,6 +426,7 @@ html, body, #root {
   margin: 0 auto;
   color: #555;
   font-size: 0.95rem;
+  padding: 0 1rem; /* Added padding for mobile */
 }
 
 /* MODAL STYLES - MOBILE FIRST */
@@ -539,6 +491,20 @@ html, body, #root {
 
 /* Mobile-specific touch optimizations */
 @media (max-width: 599px) {
+  .class-gallery {
+    gap: 1rem; /* Slightly smaller gap on mobile */
+    padding: 0 0.75rem; /* Adjusted padding */
+  }
+  
+  .gallery-item {
+    aspect-ratio: 16 / 9; /* Slightly wider on mobile */
+  }
+  
+  .gallery-description {
+    font-size: 0.85rem;
+    padding: 0 0.75rem;
+  }
+  
   .educ-modal-content {
     width: 92%;
     max-width: 92%;
@@ -585,15 +551,16 @@ html, body, #root {
   }
 }
 
-/* TABLET AND DESKTOP STYLES (min-width: 600px) */
+/* TABLET (2 columns at 600px and above) */
 @media (min-width: 600px) {
   .learning-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .class-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
     gap: 1.8rem;
+    padding: 0 1.5rem;
   }
   
   .gallery-item {
@@ -615,15 +582,24 @@ html, body, #root {
   }
 }
 
-/* DESKTOP */
+/* DESKTOP (3 columns at 768px) */
+@media (min-width: 768px) {
+  .class-gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on small desktop */
+    gap: 2rem;
+  }
+}
+
+/* LARGE DESKTOP (4 columns at 1024px and above) */
 @media (min-width: 1024px) {
   .learning-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .class-gallery {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large desktop */
     gap: 2rem;
+    padding: 0 2rem;
   }
   
   .gallery-item {

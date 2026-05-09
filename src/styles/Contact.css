@@ -296,6 +296,7 @@ h1 {
   padding: 2rem 1rem;
   text-align: center;
   box-sizing: border-box;
+    position: relative; 
 }
 
 .social-item:first-child {
@@ -325,7 +326,7 @@ h1 {
 /* Placeholder Icon */
 .placeholder-icon {
   font-size: 2rem;
-  color: #ffffff;
+  color: #f00303;
 }
 
 /* Title */
@@ -448,5 +449,39 @@ h1 {
 
   .placeholder-icon {
     font-size: 1.7rem;
+  }
+}
+
+.copied-text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4c4e4c;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  animation: fadeInOut 2s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 }

@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "../styles/Contact.css";
-import SampleImage from "../assets/capcut-icon.png";
+import GmailImage from "../assets/gmail-icon.png";
+import LinkedinImage from "../assets/linkedin-icon.png";
+import ViberImage from "../assets/viber-icon.png";
+import FacebookImage from "../assets/facebook-icon.png";
 
 function Contact() {
+  const [copiedItem, setCopiedItem] = useState(null);
+
+  const handleCopy = (text, item) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedItem(item);
+      setTimeout(() => setCopiedItem(null), 2000);
+    });
+  };
+
   return (
     <div className="page-container">
       <div className="contact-columns">
@@ -13,10 +25,10 @@ function Contact() {
             <p className="contact-small-title contact">CONTACTS</p>
             <h2 className="contact-catchy-phrase contact">
               Interested in my work? <br />
-              Let’s make something great.
+              Let's make something great.
             </h2>
             <p className="contact-description contact">
-              Feel free to explore my projects or reach out if you’d like to collaborate.
+              Feel free to explore my projects or reach out if you'd like to collaborate.
             </p>
             <p className="contact-address contact">
               San Mateo, Rizal, Philippines 1850
@@ -41,43 +53,63 @@ function Contact() {
 
         {/* Bottom Column */}
         <div className="column-bottom">
-<div className="social-grid">
-  {/* Email */}
-  <div className="social-item">
-    <div className="tool-icon"> 
-      <img src={SampleImage} alt="Email Icon" />
-    </div>
-    <h3>Email</h3>
-    <p>yourname@email.com</p>
-  </div>
+          <div className="social-grid">
+            {/* Email */}
+            <div 
+              className="social-item" 
+              onClick={() => handleCopy("kyledmendoza02@gmail.com", "email")}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="tool-icon"> 
+                <img src={GmailImage} alt="Email Icon" />
+              </div>
+              <h3>Email</h3>
+              <p>kyledmendoza02@gmail.com</p>
+              {copiedItem === "email" && <span className="copied-text">COPIED!</span>}
+            </div>
 
-  {/* LinkedIn */}
-  <div className="social-item">
-    <div className="tool-icon"> 
-      <img src={SampleImage} alt="LinkedIn Icon" />
-    </div>
-    <h3>LinkedIn</h3>
-    <p>linkedin.com/in/username</p>
-  </div>
+            {/* LinkedIn */}
+            <div 
+              className="social-item" 
+              onClick={() => handleCopy("linkedin.com/in/kyle-dcm-d0204", "linkedin")}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="tool-icon"> 
+                <img src={LinkedinImage} alt="LinkedIn Icon" />
+              </div>
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/kyle-dcm-d0204</p>
+              {copiedItem === "linkedin" && <span className="copied-text">COPIED!</span>}
+            </div>
 
-  {/* Viber */}
-  <div className="social-item">
-    <div className="tool-icon"> 
-      <img src={SampleImage} alt="Viber Icon" />
-    </div>
-    <h3>Viber</h3>
-    <p>+63 900 000 0000</p>
-  </div>
+            {/* Viber */}
+            <div 
+              className="social-item" 
+              onClick={() => handleCopy("+63 924 397 7908", "viber")}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="tool-icon"> 
+                <img src={ViberImage} alt="Viber Icon" />
+              </div>
+              <h3>Viber</h3>
+              <p>+63 924 397 7908</p>
+              {copiedItem === "viber" && <span className="copied-text">COPIED!</span>}
+            </div>
 
-  {/* Facebook */}
-  <div className="social-item">
-    <div className="tool-icon"> 
-      <img src={SampleImage} alt="Facebook Icon" />
-    </div>
-    <h3>Facebook</h3>
-    <p>facebook.com/username</p>
-  </div>
-</div>
+            {/* Facebook */}
+            <div 
+              className="social-item" 
+              onClick={() => handleCopy("facebook.com/KyleDcMendoza", "facebook")}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="tool-icon"> 
+                <img src={FacebookImage} alt="Facebook Icon" />
+              </div>
+              <h3>Facebook</h3>
+              <p>facebook.com/KyleDcMendoza</p>
+              {copiedItem === "facebook" && <span className="copied-text">COPIED!</span>}
+            </div>
+          </div>
         </div>
       </div>
     </div>
