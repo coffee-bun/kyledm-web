@@ -485,3 +485,289 @@ h1 {
     transform: translateY(-10px);
   }
 }
+
+/* Contact Page 2 - Full black background with centered content */
+.contact-page2 {
+  background-color: #000000 !important;
+  background: #000000 !important;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove any existing styles from page-container */
+.page-container.contact-page2 {
+  background-color: #000000;
+  background: #000000;
+}
+
+/* Centered content wrapper - Responsive */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive title - smaller on mobile */
+.centered-title {
+  color: #ffffff;
+  font-size: clamp(1.2rem, 6vw, 2rem);
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 0 15px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* Contact Form Styling - Fully Responsive */
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff;
+  font-size: clamp(0.85rem, 4vw, 0.95rem);
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: clamp(10px, 3vw, 14px) clamp(12px, 4vw, 16px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: clamp(0.85rem, 4vw, 1rem);
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: clamp(12px, 4vw, 14px) 24px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 4vw, 1rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Mobile First Responsive Breakpoints */
+
+/* Small Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+  .centered-content {
+    padding: 15px;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+  
+  .centered-title {
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .contact-form {
+    padding: 0 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border-radius: 6px;
+  }
+  
+  .submit-btn {
+    border-radius: 6px;
+  }
+}
+
+/* Medium Mobile Devices (Landscape) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .centered-content {
+    padding: 20px;
+  }
+  
+  .centered-title {
+    margin-bottom: 35px;
+  }
+  
+  .form-group {
+    margin-bottom: 22px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .centered-content {
+    padding: 30px;
+  }
+  
+  .centered-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  .centered-content {
+    padding: 40px;
+  }
+  
+  .centered-title {
+    font-size: 2.2rem;
+    margin-bottom: 45px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 14px 18px;
+  }
+}
+
+/* Touch-friendly adjustments for mobile */
+@media (max-width: 768px) {
+  .form-group input,
+  .form-group textarea,
+  .submit-btn {
+    font-size: 16px; /* Prevents zoom on focus in iOS */
+  }
+  
+  .submit-btn {
+    padding: 14px 20px; /* Larger touch target */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+/* For very small screens (height constraints) */
+@media (max-height: 600px) and (max-width: 768px) {
+  .centered-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .centered-title {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 12px;
+  }
+  
+  .contact-form textarea {
+    min-height: 80px;
+  }
+}
+
+/* Ensure form doesn't overflow on very small screens */
+@media (max-width: 360px) {
+  .centered-content {
+    padding: 10px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 8px 12px;
+  }
+  
+  .centered-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Optional: Add smooth scrolling for mobile */
+@media (max-width: 768px) {
+  .contact-page2 {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Hide any other unwanted elements from previous styles */
+.contact-page2 .contact-columns,
+.contact-page2 .column-bottom,
+.contact-page2 .social-grid,
+.contact-page2 .contact-header p,
+.contact-page2 .contact-description,
+.contact-page2 .contact-address,
+.contact-page2 .contact-buttons-container,
+.contact-page2 .social-item {
+  display: none;
+}
+
+.form-success-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.form-error-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 4px;
+  text-align: center;
+}

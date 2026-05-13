@@ -39,6 +39,8 @@ import SISImage from "../assets/projects/flor-2.png";
 import EcoImage from "../assets/projects/eco-1.png";
 import VividImage from "../assets/projects/vivid-1.jpg";
 import TroubleImage from "../assets/troubleshoot-icon.png";
+import PSImage from "../assets/photoshop-image.png";
+import SocMedImage from "../assets/socmend-icon.png";
 
 
 function Home() {
@@ -96,7 +98,17 @@ function Home() {
       title: "Photography",
       desc: "Capturing creative and meaningful photos as both a hobby and skill, with experience in photo composition, editing, and visual storytelling for personal and school-related projects."
     },
-          {
+      {
+      icon: PSImage,
+      title: "Photoshop",
+      desc: "Familiar with Adobe Photoshop and experienced in creating basic graphic designs, photo editing, and visual content for academic and personal projects. Continuously improving design and editing skills through practice and hands-on experience."
+    },
+      {
+      icon: SocMedImage,
+      title: "Social Media Graphics",
+      desc: "Experienced in creating social media content such as promotional posts, basic branding materials, and short-form video edits for academic, personal, and creative projects. Familiar with designing visually engaging content tailored for different social media platforms."
+    },
+      {
       icon: MicroImage,
       title: "Microsoft Office",
       desc: "Experienced in using Microsoft Office tools for creating documents, presentations, spreadsheets, and reports, especially for academic projects, research, and documentation during college."

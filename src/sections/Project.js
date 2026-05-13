@@ -28,7 +28,9 @@ import App1 from "../assets/projects/vivid-1.jpg";
 import App2 from "../assets/projects/vivid-2.jpg";
 import App3 from "../assets/projects/vivid-3.jpg";
 import App4 from "../assets/projects/vivid-logo.png";
-
+import gfmic1 from "../assets/projects/gfmic1.png";
+import gfmic2 from "../assets/projects/gfmic-2.png";
+import gfmic3 from "../assets/projects/gfmic-3.png";
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -77,19 +79,27 @@ function Projects() {
       link: "#"
     },
       {
-      id: 5,
+      id: 6,
       title: "Algori tees eCommerce System",
       image: Algo1,
       gallery: [ Algo1, Algo2, Algo3,],
-      description: "ThiBecame part of the development team for the Algori Tees eCommerce System during college as a Front-End Developer for our final requirement in the Integration subject. Contributed to the design and development of the Shopping Cart and Checkout features, focusing on creating responsive, user-friendly, and organized interfaces to improve the overall shopping experience. Assisted in implementing clean UI layouts and smooth user interactions for the eCommerce workflow.",
+      description: "Became part of the development team for the Algori Tees eCommerce System during college as a Front-End Developer for our final requirement in the Integration subject. Contributed to the design and development of the Shopping Cart and Checkout features, focusing on creating responsive, user-friendly, and organized interfaces to improve the overall shopping experience. Assisted in implementing clean UI layouts and smooth user interactions for the eCommerce workflow.",
       link: "#"
     },
       {
-      id: 5,
+      id: 7,
       title: "Vivid Vibes Motivational Application",
       image: App4,
       gallery: [ App1, App2, App3,],
       description: "Developed the Vivid Vibes Motivational Application as one of the final project requirements during college, creating a functional mobile application that provides daily motivational and inspirational quotes for users. Designed and developed a clean and user-friendly interface focused on simple navigation, accessibility, and an engaging user experience while applying front-end development and UI design skills throughout the project.",
+      link: "#"
+    },
+      {
+      id: 8,
+      title: "Goverment Financial Management Innovators Circle Inc.",
+      image: gfmic1,
+      gallery: [ gfmic1, gfmic2, gfmic3],
+      description: "Became part of the project during internship as one of the Quality Assurance Testers, focusing on the finance and certificate features of the system. Assisted in conducting system testing, identifying issues, validating functionality, and ensuring the reliability and accuracy of core system processes before deployment.",
       link: "#"
     }
   ];
@@ -116,22 +126,27 @@ function Projects() {
   };
   
   return (
-    <div className="prjcts-container">
-      <div className="projects-layout">
-        {/* Left Fixed Sidebar */}
-        <aside className="left-sidebar">
-          <div className="sidebar-content">
-            <h2 className="sidebar-title">Projects I've Worked On</h2>
-            <div className="get-in-touch">
-              <p className="proj-description">
-                I'm always open to discussing new projects and creative ideas.
-              </p>
-              <Link to="/contact">
-                <button className="contact-btn">Contact Me</button>
-              </Link>
-            </div>
-          </div>
-        </aside>
+<div className="prjcts-container">
+  <div className="projects-layout">
+    {/* Left Fixed Sidebar */}
+    <aside className="left-sidebar">
+      <div className="sidebar-content">
+        <h2 className="sidebar-title">Projects I've Worked On</h2>
+        <div className="get-in-touch">
+          <p className="proj-description">
+            I'm always open to discussing new projects and creative ideas.
+          </p>
+          <Link to="/contact">
+            <button className="contact-btn">Contact Me</button>
+          </Link>
+          {/* Add the new Other Projects button here */}
+          <Link to="/other-projects">
+            <button className="other-projects-btn">Other Projects</button>
+          </Link>
+        </div>
+      </div>
+    </aside>
+
 <main className="right-content">
           {projectsData.map((project) => (
             <div className="projects-main-container" key={project.id}>

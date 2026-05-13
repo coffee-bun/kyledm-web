@@ -94,7 +94,7 @@ html, body {
 .title-highlight {
   width: 70px;
   height: 4px;
-  background: linear-gradient(90deg, #4a90e2, #8ba9d6);
+  background: linear-gradient(90deg, #14b8a6, #8ba9d6);
   border-radius: 4px;
   margin-bottom: 1.2rem;
 }
@@ -155,7 +155,7 @@ html, body {
 }
 
 .text-gradient {
-  background: linear-gradient(120deg, #2563eb, #7c3aed);
+  background: linear-gradient(120deg, #14b8a6, #7c3aed);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -198,7 +198,7 @@ html, body {
 }
 
 .about-description-premium p strong {
-  color: #2563eb;
+  color: #14b8a6;
   font-weight: 600;
   position: relative;
   display: inline-block;
@@ -395,7 +395,7 @@ html, body {
 .about-page3-divider {
   width: 70px;
   height: 3px;
-  background: linear-gradient(90deg, #4a90e2, #7c3aed);
+  background: linear-gradient(90deg, #14b8a6, #7c3aed);
   margin: 0 auto 3rem auto;
   border-radius: 3px;
 }
@@ -556,7 +556,7 @@ html, body {
   letter-spacing: 3px;
   color: #4a90e2;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #4a90e2, #7c3aed);
+  background: linear-gradient(135deg, #14b8a6, #7c3aed);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -578,7 +578,7 @@ html, body {
 .about-page4-divider {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #4a90e2, #7c3aed, #4a90e2);
+  background: linear-gradient(90deg, #4a90e2, #14b8a6, #4a90e2);
   margin: 0 auto 1.5rem auto;
   border-radius: 4px;
   position: relative;
@@ -808,7 +808,7 @@ html, body {
   left: 0;
   height: 5px;
   width: 100%;
-  background: linear-gradient(90deg, #4a90e2, #7c3aed);
+  background: linear-gradient(90deg, #14b8a6);
 }
 
 /* Hover effect */
@@ -854,7 +854,7 @@ html, body {
 .about-card-company {
   font-size: 1rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #4a90e2, #7c3aed);
+  background: linear-gradient(135deg, rgb(122, 122, 122));
   -webkit-background-clip: text;
   color: transparent;
   margin: 0.3rem 0;
@@ -981,7 +981,7 @@ html, body {
 .about-page5-divider {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #4a90e2, #7c3aed, #4a90e2);
+  background: linear-gradient(90deg, #4a90e2, #14b8a6, #4a90e2);
   margin: 0 auto 1.5rem auto;
   border-radius: 4px;
   position: relative;
@@ -1288,7 +1288,7 @@ html, body {
   left: 0;
   height: 5px;
   width: 100%;
-  background: linear-gradient(90deg, #4a90e2, #7c3aed);
+  background: linear-gradient(90deg, #14b8a6);
 }
 
 /* Hover effect */
@@ -1327,7 +1327,7 @@ html, body {
 .internship-card-company {
   font-size: 1rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #4a90e2, #7c3aed);
+  background: linear-gradient(135deg, rgb(121, 121, 121));
   -webkit-background-clip: text;
   color: transparent;
   margin: 0.3rem 0;
